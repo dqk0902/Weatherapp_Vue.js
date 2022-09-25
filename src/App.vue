@@ -7,7 +7,6 @@
         : ''
     "
   >
-    <header><Navbar /></header>
     <main>
       <div class="dropdown-popover" @click="isVisible = !isVisible">
         <div class="search-box">
@@ -168,11 +167,9 @@
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
-
 export default {
   name: "App",
-  components: { Navbar },
+  components: {},
   data() {
     return {
       api_key: "549310631a641754754a1b343fcccd74",
